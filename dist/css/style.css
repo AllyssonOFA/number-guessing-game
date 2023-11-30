@@ -1,0 +1,168 @@
+:root[data-theme="light"] {
+    --text: #010c13;
+    --background: #fafdff;
+    --primary: #54b0f2;
+    --secondary: #bddefa;
+    --accent: #1086da;
+  }
+
+:root[data-theme="dark"] {
+    --text: #ecf7fe;
+    --background: #000305;
+    --primary: #0d69ab;
+    --secondary: #052642;
+    --accent: #259bef;
+}
+
+:root {
+    --ff: 'Poppins';
+}
+
+body {
+    background-color: var(--background);
+    font-family: var(--ff), sans-serif;
+    color: var(--text);
+    min-height: 100vh;
+}
+
+.main {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 1rem;
+    width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 1rem;
+
+    border-radius: .5rem;
+    box-shadow: 0 0 4px var(--primary);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.btn {
+    color: inherit;
+    font-size: 1.25rem;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+}
+
+.active-btn{
+    background-color: var(--accent);
+    font-weight: 700;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2rem;
+    font-weight: 700;
+}
+
+i {
+    margin-left: 5px;
+    color: var(--accent);
+}
+
+/*CONFIGURAÇÕES*/
+#settings {
+    margin: auto auto;
+    background-color: var(--secondary);
+    color: var(--text);
+    border: none;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 500px;
+    padding: 1rem;
+}
+
+#settings label {
+    font-weight: 600;
+    text-align: center;
+}
+
+dialog::backdrop{
+    background-color: #000;
+    opacity: .5;
+}
+
+.config-wrapper {
+    max-width: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#settings .btn {
+    background-color: var(--accent);
+}
+
+#settings i {
+    color: inherit;
+}
+
+/* TELA DE JOGO */
+#game-input {
+    margin: 0 auto;
+    width: 150px;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    color: #FFF;
+}
+
+#game-input::placeholder{
+    color: var(--text);
+}
+
+#game-input::-webkit-outer-spin-button,
+#game-input::-webkit-inner-spin-button{
+    display: none;
+}
+
+/* TELA DE VITÓRIA */
+p {
+    font-size: 1.5rem;
+}
