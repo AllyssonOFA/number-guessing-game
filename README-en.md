@@ -11,7 +11,7 @@ This is a repository for a small random number guessing game, made in JavaScript
 - Try to guess the number in as few attemps as possible.
 
 ## Demo
-- Access and guess: [Here](https://google.com.br)
+- Access and guess: [Here](https://number-guess-game13.netlify.app/)
 
 ## Resources Used
 - Interface SFX - Sound effect by [UNIVERSFIELD](https://pixabay.com/users/universfield-28281460/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=124464") supplied by [Pixabay](https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=124464).
